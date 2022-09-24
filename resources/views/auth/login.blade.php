@@ -50,7 +50,7 @@
                 </form>
 
                 <p class="mb-1">
-                    <a href="#">I forgot my password</a>
+                    <a href="#">Forgot password</a>
                 </p>
                 <p class="mb-0">
                     <a href="{{ route('admin.register') }}" class="text-center">Register a new membership</a>
