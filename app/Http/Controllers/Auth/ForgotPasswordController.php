@@ -4,10 +4,12 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Session;
 use DB; 
-use Carbon\Carbon; 
+use Carbon\Carbon;
 use App\Models\User; 
-use Mail; 
+use Mail;
 use Hash;
 use Illuminate\Support\Str;
 
@@ -34,7 +36,7 @@ class ForgotPasswordController extends Controller
     {
         $request->validate([
             'email' => 'required|email|exists:users',
-        ]);  
+        ]);   
         
         $token = Str::random(64);
   

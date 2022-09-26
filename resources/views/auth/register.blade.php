@@ -29,6 +29,9 @@
                             </div>
                         </div>
                     </div>
+                    @if ($errors->has('name'))
+                        <span class="text-danger">{{ $errors->first('name') }}</span>
+                    @endif
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" name="email" placeholder="Email">
                         <div class="input-group-append">
@@ -37,6 +40,9 @@
                             </div>
                         </div>
                     </div>
+                    @if ($errors->has('email'))
+                        <span class="text-danger">{{ $errors->first('email') }}</span>
+                    @endif
                     <div class="input-group mb-3">
                         <input type="password" class="form-control" name="password" placeholder="Password">
                         <div class="input-group-append">
@@ -45,14 +51,20 @@
                             </div>
                         </div>
                     </div>
+                    @if ($errors->has('password'))
+                        <span class="text-danger">{{ $errors->first('password') }}</span>
+                    @endif
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" name="confirmed" placeholder="Retype password">
+                        <input type="password" class="form-control" name="password_confirmation" placeholder="Retype password">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
                             </div>
                         </div>
                     </div>
+                    @if ($errors->has('password_confirmation'))
+                        <span class="text-danger">{{ $errors->first('password_confirmation') }}</span>
+                    @endif
                     <div class="row">
                         <div class="col-md-12">
                             <button type="submit" class="btn btn-primary btn-block">Register</button>
