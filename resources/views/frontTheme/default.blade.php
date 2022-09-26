@@ -11,6 +11,10 @@
 
 <body>
 
+    <!-- Front Header -->
+    @include('frontTheme.header')
+    <!-- End Front Header -->
+
     <!-- Content-->
     @yield('frontcontent')
     <!-- End Content-->
@@ -18,12 +22,6 @@
     <!-- footer -->
     @include('frontTheme.footer')
     <!-- //footer -->
-
-    <!-- Js scripts -->
-    <!-- move top -->
-    <button onclick="topFunction()" id="movetop" title="Go to top">
-        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
-    </button>
 
     {{-- Script --}}
     @include('frontTheme.script')
