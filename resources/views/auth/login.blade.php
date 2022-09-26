@@ -15,6 +15,11 @@
 </head>
 <body class="hold-transition login-page">
     <div class="login-box">
+        @if (Session::has('message'))
+            <div class="alert alert-success" role="alert">
+                {{ Session::get('message') }}
+            </div>
+        @endif
         <div class="card">
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Sign in to start your work</p>

@@ -19,25 +19,47 @@
             <div class="card-header text-center">
                 <a href="{{ route('admin.login') }}" class="h1"><b>Admin</b>LTE</a>
             </div>
+            @if (Session::has('error'))
+                <div class="alert alert-danger" role="alert">
+                    {{ Session::get('error') }}
+                </div>
+            @endif
             <div class="card-body">
                 <form action="{{ route('admin.reset.password.post') }}" method="post">
                     @csrf
                     <div class="input-group mb-3">
-                        <input type="password" name="Password" class="form-control" placeholder="Password">
+                        <input type="email" name="email" class="form-control" placeholder="Email">
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
+                                <span class="fas fa-envelope"></span>
                             </div>
                         </div>
                     </div>
+                    @if ($errors->has('email'))
+                        <span class="text-danger">{{ $errors->first('email') }}</span>
+                    @endif
                     <div class="input-group mb-3">
-                        <input type="password" name="Password" class="form-control" placeholder="Confirm Password">
+                        <input type="password" name="password" class="form-control" placeholder="Password">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
                             </div>
                         </div>
                     </div>
+                    @if ($errors->has('password'))
+                        <span class="text-danger">{{ $errors->first('password') }}</span>
+                    @endif
+                    <div class="input-group mb-3">
+                        <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    @if ($errors->has('password_confirmation'))
+                        <span class="text-danger">{{ $errors->first('password_confirmation') }}</span>
+                    @endif
                     <div class="row">
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary btn-block">Change password</button>

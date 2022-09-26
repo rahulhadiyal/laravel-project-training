@@ -20,6 +20,11 @@
                 <a href="{{ route('admin.login') }}" class="h1"><b>Admin</b>LTE</a>
             </div>
             <div class="card-body">
+                @if (Session::has('message'))
+                    <div class="alert alert-success" role="alert">
+                        {{ Session::get('message') }}
+                    </div>
+                @endif
                 <form action="{{ route('admin.forget.password.post') }}" method="post">
                     @csrf
                     <div class="input-group mb-3">
