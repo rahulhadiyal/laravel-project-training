@@ -22,7 +22,7 @@
             <div class="card-body">
                 <form action="{{ route('admin.reset.password.post') }}" method="post">
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="password" name="Password" class="form-control" placeholder="Password">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Confirm Password">
+                        <input type="password" name="Password" class="form-control" placeholder="Confirm Password">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>

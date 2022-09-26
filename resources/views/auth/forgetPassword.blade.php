@@ -21,6 +21,7 @@
             </div>
             <div class="card-body">
                 <form action="{{ route('admin.forget.password.post') }}" method="post">
+                    @csrf
                     <div class="input-group mb-3">
                         <input type="email" name="email" class="form-control" placeholder="Email">
                         <div class="input-group-append">
