@@ -21,6 +21,7 @@
             </div>
             <div class="card-body">
                 <form action="{{ route('admin.reset.password.post') }}" method="post">
+                    @csrf
                     <div class="input-group mb-3">
                         <input type="password" name="Password" class="form-control" placeholder="Password">
                         <div class="input-group-append">
