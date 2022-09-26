@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Session;
 use DB; 
@@ -23,6 +24,10 @@ class ForgotPasswordController extends Controller
     */
     public function showForgetPasswordForm()
     {
+        if (Auth::check()) 
+        {
+            return redirect()->route('admin.dashboard');
+        }
         return view('auth.forgetPassword');
     }
   
@@ -61,7 +66,11 @@ class ForgotPasswordController extends Controller
     */
     public function showResetPasswordForm($token) 
     { 
-         return view('auth.resetPassword', ['token' => $token]);
+        if (Auth::check()) 
+        {
+            return redirect()->route('admin.dashboard');
+        }
+        return view('auth.resetPassword', ['token' => $token]);
     }
   
     /*
