@@ -2,78 +2,45 @@
 
 @section('frontcontent')
 
-<!-- header -->
-@include('front.contact.header')
-<!-- //header -->
-
-<!-- inner banner -->
-@include('front.contact.animation')
-<!-- //inner banner -->
-
-<!-- contact -->
-<div class="w3l-contact-info pt-5" id="contact">
-    <div class="container py-md-5 py-4">
-        <div class="position-relative">
-            <h3 class="title-style text-center mb-sm-5 mb-4">Contact Us</h3>
-            <div class="title-paw-style">
-                <i class="fas fa-paw"></i>
-                <i class="fas fa-paw paw-2"></i>
-                <i class="fas fa-paw paw-3"></i>
+<div class="container">
+    <div class="contact">
+        <div class="main-head-section">                
+            <h3>contact</h3>    
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424396.3176723366!2d150.92243255000002!3d-33.7969235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney+NSW%2C+Australia!5e0!3m2!1sen!2sin!4v1431587453420" width="100%" height="151px" frameborder="0" style="border:0"></iframe>
             </div>
         </div>
-        <div class="align-self pt-4">
-            <div class="contact-infos">
-                <div class="single-contact-infos">
-                    <div class="icon-box"><i class="fas fa-map-marker-alt color-1"></i></div>
-                    <div class="text-box">
-                        <h3 class="mb-3">Address info</h3>
-                        <p>Coffee bean, 343 cafe coffee lane, #2214 cravel street, NY.</p>
-                    </div>
-                </div>
-                <div class="single-contact-infos">
-                    <div class="icon-box"><i class="fas fa-clock color-2"></i></div>
-                    <div class="text-box">
-                        <h3 class="mb-3">Opening hours</h3>
-                        <p class=""> Monday – Friday : 9am - 6pm</p>
-                        <p class=""> Saturday : 10am - 4pm</p>
-                    </div>
-                </div>
-                <div class="single-contact-infos">
-                    <div class="icon-box"><i class="fas fa-envelope-open-text color-3"></i></div>
-                    <div class="text-box">
-                        <h3 class="mb-3">Contact info</h3>
-                        <p class=""><a href="tel:+1(21) 234 4567">+1(21) 234 4567</a></p>
-                        <p class=""> <a href="mailto:info@support.com">info@support.com</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5 pt-md-5">
-            <div class="col-lg-6 map order-lg-1 order-2">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001161.424489281!2d-78.01909140705047!3d42.72866436845163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sin!4v1570786994395!5m2!1sen!2sin"
-                    frameborder="0" allowfullscreen=""></iframe>
-            </div>
-            <div class="col-lg-6 form-inner-cont order-lg-2 order-1 mb-lg-0 mb-5 ps-lg-4">
-                <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
-                    <div class="form-input">
-                        <input type="text" name="w3lName" id="w3lName" placeholder="Your name">
-                    </div>
-                    <div class="form-input">
-                        <input type="email" name="w3lSender" id="w3lSender" placeholder="Your email address"
-                            required="">
-                    </div>
-                    <div class="form-input">
-                        <textarea name="w3lMessage" id="w3lMessage" placeholder="Your message"
-                            required=""></textarea>
-                    </div>
-                    <div class="text-right">
-                        <button type="submit" class="btn btn-style btn-primary">Submit</button>
+        <div class="contact_top">      
+            <div class="col-md-8 contact_left">
+                <h4>Contact Form</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt dolor et tristique bibendum. Aenean sollicitudin vitae dolor ut posuere.</p>
+                <form>
+                    <div class="form_details">
+                        <input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+                        <input type="text" class="text" value="Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}">
+                        <input type="text" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+                        <textarea value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+                        <div class="clearfix"> </div>
+                        <div class="sub-button">
+                            <input type="submit" value="Send message">
+                        </div>
                     </div>
                 </form>
             </div>
+            <div class="col-md-4 company-right">
+                <div class="company_ad">
+                    <h3>Contact Info</h3>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit velit justo.</span>
+                    <address>
+                        <p>email:<a href="#">info@display.com</a></p>
+                        <p>phone: 1.306.222.4545</p>
+                        <p>222 2nd Ave South</p>
+                        <p>Saskabush, SK   S7M 1T6</p>
+                    </address>
+                </div>
+            </div>  
+            <div class="clearfix"> </div>
         </div>
     </div>
 </div>
-<!-- //contact -->
 @endsection
