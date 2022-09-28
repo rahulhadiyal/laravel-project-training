@@ -47,8 +47,8 @@
             <div class="nam-matis">
                 <div class="nam-matis-top">
                             <div class="col-md-6 nam-matis-1">
-                                <a href="single.html"><img src="{{ asset('frontTheme/images/5.jpg') }}" class="img-responsive" alt=""></a>
-                                <h3><a href="single.html">Suspendisse a pellentesque dui</a></h3>
+                                <a href="{{ route('front.singleBlog') }}"><img src="{{ asset('frontTheme/images/5.jpg') }}" class="img-responsive" alt=""></a>
+                                <h3><a href="{{ route('front.singleBlog') }}">Suspendisse a pellentesque dui</a></h3>
                                 <p>Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
                             </div>
                             <div class="col-md-6 nam-matis-1">
@@ -60,13 +60,13 @@
                     </div>
                     <div class="nam-matis-top">
                             <div class="col-md-6 nam-matis-1">
-                                <a href="single.html"><img src="{{ asset('frontTheme/images/4.jpg') }}" class="img-responsive" alt=""></a>
-                                <h3><a href="single.html">Suspendisse a pellentesque dui</a></h3>
+                                <a href="{{ route('front.singleBlog') }}"><img src="{{ asset('frontTheme/images/4.jpg') }}" class="img-responsive" alt=""></a>
+                                <h3><a href="{{ route('front.singleBlog') }}">Suspendisse a pellentesque dui</a></h3>
                                 <p>Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
                             </div>
                             <div class="col-md-6 nam-matis-1">
-                                <a href="single.html"><img src="{{ asset('frontTheme/images/1.jpg') }}" class="img-responsive" alt=""></a>
-                                <h3><a href="single.html">Suspendisse a pellentesque dui</a></h3>
+                                <a href="{{ route('front.singleBlog') }}"><img src="{{ asset('frontTheme/images/1.jpg') }}" class="img-responsive" alt=""></a>
+                                <h3><a href="{{ route('front.singleBlog') }}">Suspendisse a pellentesque dui</a></h3>
                                 <p>Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
                             </div>
                                 <div class="clearfix"> </div>
@@ -85,20 +85,20 @@
         <div class="blo-top">
             <div class="blog-grids">
                 <div class="blog-grid-left">
-                    <a href="single.html"><img src="{{ asset('frontTheme/images/1b.jpg') }}" class="img-responsive" alt=""></a>
+                    <a href="{{ route('front.singleBlog') }}"><img src="{{ asset('frontTheme/images/1b.jpg') }}" class="img-responsive" alt=""></a>
                 </div>
                 <div class="blog-grid-right">
-                    <h4><a href="single.html">Little Invaders </a></h4>
+                    <h4><a href="{{ route('front.singleBlog') }}">Little Invaders </a></h4>
                     <p>pellentesque dui, non felis. Maecenas male </p>
                 </div>
                 <div class="clearfix"> </div>
             </div>
             <div class="blog-grids">
                 <div class="blog-grid-left">
-                    <a href="single.html"><img src="{{ asset('frontTheme/images/2b.jpg') }}" class="img-responsive" alt=""></a>
+                    <a href="{{ route('front.singleBlog') }}"><img src="{{ asset('frontTheme/images/2b.jpg') }}" class="img-responsive" alt=""></a>
                 </div>
                 <div class="blog-grid-right">
-                    <h4><a href="single.html">Little Invaders </a></h4>
+                    <h4><a href="{{ route('front.singleBlog') }}">Little Invaders </a></h4>
                     <p>pellentesque dui, non felis. Maecenas male </p>
                 </div>
                 <div class="clearfix"> </div>
@@ -108,7 +108,7 @@
                     <a href=""><img src="{{ asset('frontTheme/images/3b.jpg') }}" class="img-responsive" alt=""></a>
                 </div>
                 <div class="blog-grid-right">
-                    <h4><a href="single.html">Little Invaders </a></h4>
+                    <h4><a href="{{ route('front.singleBlog') }}">Little Invaders </a></h4>
                     <p>pellentesque dui, non felis. Maecenas male </p>
                 </div>
                 <div class="clearfix"> </div>

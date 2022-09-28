@@ -49,6 +49,11 @@ Route::prefix('front')->name('front.')->group(function(){
     Route::get('', [ FrontHomeController::class , 'index' ])->name('');
     Route::get('about', [ FrontHomeController::class , 'about' ])->name('about');
     Route::get('services', [ FrontHomeController::class , 'services' ])->name('services');
+    Route::get('blog', [ FrontHomeController::class , 'blog' ])->name('blog');
+    Route::get('singleBlog', [ FrontHomeController::class , 'singleBlog' ])->name('singleBlog');
+    Route::get('shortcodes', [ FrontHomeController::class , 'shortcodes' ])->name('shortcodes');
     Route::get('contact', [ FrontHomeController::class , 'contact' ])->name('contact');
+    Route::get('login', [ FrontHomeController::class , 'login' ])->name('login');
+    Route::get('register', [ FrontHomeController::class , 'register' ])->name('register');
 });
 
