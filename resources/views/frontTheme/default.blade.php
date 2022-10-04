@@ -27,5 +27,4 @@
     @include('frontTheme.script')
     {{-- End Script --}}
 </body>
-
 </html>
